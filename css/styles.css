@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Sarala";
+  src: url("/fonts/Sarala/Sarala-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  color: #eeeeee;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Sarala", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.project-tile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 250px;
+  height: 250px;
+}
+
+#welcome-section {
+  background: rgb(61, 61, 61);
+  background: linear-gradient(
+    171deg,
+    rgba(61, 61, 61, 1) 0%,
+    rgba(32, 43, 56, 1) 100%
+  );
+
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-header {
+  font-size: 10rem;
+}
+
+#projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: #203738;
+}
+
+#contact {
+  height: 500px;
+  background-color: orange;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #191970;
+  z-index: 9;
+  border-bottom: 1px solid #ffffff;
+}
+
+#nav-list {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#nav-list a {
+  padding: 1rem;
+  display: block;
+}
+#nav-list a:hover {
+  background-color: #f5fffa;
+  color: #000000;
+}
