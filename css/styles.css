@@ -43,6 +43,27 @@ p {
   margin: 0;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.section-header {
+  font-size: 10rem;
+  font-weight: bold;
+}
+
+.grow {
+  transition: all 0.5s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+
 #welcome-section {
   background: #3d3d3d;
   background: linear-gradient(
@@ -67,15 +88,19 @@ p {
 
 #projects {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
   height: 100vh;
   background-color: #203738;
 }
 
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 500px;
-  background-color: orange;
+  background-color: #1e3820;
 }
 
 #navbar {
@@ -112,6 +137,24 @@ p {
   background-color: #34495e;
 }
 
+#ghub-logo {
+  height: 5rem;
+}
+
+#fcc-logo {
+  height: 5rem;
+}
+
+#contact-cards {
+  height: 20rem;
+  flex-direction: row;
+}
+
+#contact-subtitle {
+  text-align: center;
+  padding: 10px;
+}
+
 @media screen and (max-device-width: 900px) {
   #projects {
     flex-direction: column;
@@ -122,11 +165,19 @@ p {
     margin-top: 5rem;
   }
 
+  .cards {
+    flex-direction: column;
+  }
+
   #site-header {
     font-size: 16vw;
   }
 
   #nav-list {
     padding: 0;
+  }
+
+  .section-header {
+    font-size: 7rem;
   }
 }
