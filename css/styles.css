@@ -92,6 +92,7 @@ p {
   justify-content: space-evenly;
   height: 100vh;
   background-color: #203738;
+  align-items: center;
 }
 
 #contact {
@@ -153,6 +154,10 @@ p {
 #contact-subtitle {
   text-align: center;
   padding: 10px;
+}
+
+#project-subtitle {
+  text-align: center;
 }
 
 @media screen and (max-device-width: 900px) {
